@@ -24,7 +24,9 @@ import com.box.sdk.BoxItem;
 import com.box.sdk.BoxUser;
 
 public final class Main {
-    private static final String DEVELOPER_TOKEN = "7PDSBQPLHpTlWfbH45jyIbL48yvxLGx0";
+
+	// developer token expires in an hour
+	private static final String DEVELOPER_TOKEN = "7PDSBQPLHpTlWfbH45jyIbL48yvxLGx0";
     private static final int MAX_DEPTH = 1;
 
     private Main() { }
@@ -94,7 +96,7 @@ public final class Main {
                       //Destination file in HDFS
                         Configuration conf = new Configuration();
                         System.out.println("Connecting to -- "+conf.get("fs.defaultFS"));
-                        String dst = "hdfs://tspanndev10.field.hortonworks.com:8020/box/" + fileInfo.getName();
+                        String dst = "hdfs://yourserver:8020/box/" + fileInfo.getName();
                         
                         FileSystem fs = FileSystem.get(URI.create(dst), conf);
                         OutputStream out = fs.create(new Path(dst));
