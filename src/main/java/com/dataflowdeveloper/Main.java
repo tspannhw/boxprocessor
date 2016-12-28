@@ -83,7 +83,7 @@ public final class Main {
 					}
                 	
                 	try{
-//                        Path pt=new Path("hdfs://tspanndev10.field.hortonworks.com:8020/box/" + fileInfo.getName());
+//                        Path pt=new Path("hdfs://enterprise:8020/box/" + fileInfo.getName());
                         
                         System.out.println("Save to HDFS " + fileInfo.getName());
                         
