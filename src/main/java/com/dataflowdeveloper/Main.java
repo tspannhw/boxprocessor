@@ -26,7 +26,7 @@ import com.box.sdk.BoxUser;
 public final class Main {
 
 	// developer token expires in an hour
-	private static final String DEVELOPER_TOKEN = "7PDSBQPLHpTlWfbH45jyIbL48yvxLGx0";
+	private static final String DEVELOPER_TOKEN = "L8vdpeyghwEMnlSwN3St3vapWak0BzFt";
     private static final int MAX_DEPTH = 1;
 
     private Main() { }
